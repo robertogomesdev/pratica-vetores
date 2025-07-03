@@ -5,6 +5,7 @@ Este repositório contém exercícios resolvidos praticando **vetores (arrays)**
 - Os exercícios estão organizados em arquivos `.java`, sendo **cada classe um programa executável de console**.
 - Todos os exercícios foram organizados em um PDF com os enunciados e as instruções de cada um, disponível logo abaixo.
 - Os temas abordados envolvem manipulação de arrays unidimensionais, entrada e saída de dados, estruturação de algoritmos simples com foco em prática de lógica.
+  
 **[Baixe aqui o PDF com os enunciados](./exercicios-vetores.pdf)**
 
 ## :arrows_counterclockwise: Fluxo de Execução
