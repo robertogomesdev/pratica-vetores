@@ -7,7 +7,7 @@ public class DadosPessoas {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Quantas pessoas serao digitadas? ");
+        System.out.print("Quantas pessoas serao digitadas? ");
         int N = sc.nextInt();
 
         double[] altura = new double[N];
@@ -18,10 +18,44 @@ public class DadosPessoas {
             altura[i] = sc.nextDouble();
             System.out.printf("Genero da %da pessoa: " , i+1);
             genero[i] = sc.next().charAt(0);
-            System.out.println(altura[i] + genero[i]);
         }
 
+        double menoraltura = altura[0];
+        double maioraltura = altura[0];
 
+        for (int i=1; i<N; i++){
+            if (altura[i] > maioraltura){
+                maioraltura = altura[i];
+            }
+            if (altura[i] < menoraltura){
+                menoraltura = altura[i];
+            }
+        }
 
+        int quantidadeHomens, quantidadeMulheres;
+        double alturaFemMedia, alturaFemTotal;
+
+        quantidadeMulheres = 0;
+        quantidadeHomens = 0;
+        alturaFemTotal = 0;
+
+        for (int i=0; i<N; i++){
+            if (genero[i] == 'M') {
+                quantidadeHomens++;
+            }
+            else{
+                quantidadeMulheres++;
+                alturaFemTotal += altura[i];
+            }
+        }
+
+        alturaFemMedia = alturaFemTotal / quantidadeMulheres;
+
+        System.out.printf("Menor altura = %.2f%n", menoraltura);
+        System.out.printf("Maior altura = %.2f%n", maioraltura);
+        System.out.printf("Media das alturas das mulheres = %.2f%n", alturaFemMedia);
+        System.out.printf("Numero de homens = %d%n", quantidadeHomens);
+
+        sc.close();
     }
 }
