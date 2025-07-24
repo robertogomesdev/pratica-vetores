@@ -6,7 +6,7 @@ Este repositório contém exercícios resolvidos praticando **vetores (arrays)**
 - Todos os exercícios foram organizados em um PDF com os enunciados e as instruções de cada um, disponível logo abaixo.
 - Os temas abordados envolvem manipulação de arrays unidimensionais, entrada e saída de dados, estruturação de algoritmos simples com foco em prática de lógica.
   
-**[Baixe aqui o PDF com os enunciados](./exercicios-vetores.pdf)**
+**[Baixe aqui o PDF com os enunciados](./exercicios-vetores-finalizado.pdf)**
 
 ## :arrows_counterclockwise: Fluxo de Execução
 
